@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TK_cataloge</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="navbar-1">
+                    <div class="container">
+                        <div class="d-flex">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#">Контакты <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Доставка и оплата</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Блог</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">О компании</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Аренда</a>
+                                </li>
+                            </ul>
+                            <a class="nav-link" href="#">Вход в кабинет</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="navbar-2">
+                    <div class="container">
+                        <div class="d-flex align-items-center">
+                            <a class="navbar-brand" href="#"><img src="img/Logo.png" alt=""></a>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle"  type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  38 067-191-31-51
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                  <a class="dropdown-item" href="#">38 067-191-31-51</a>
+                                  <a class="dropdown-item" href="#">38 067-191-31-51</a>
+                                  <a class="dropdown-item" href="#">38 067-191-31-51</a>
+                                </div>
+                            </div>
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                <div class="input-group-append">
+                                  <button class="btn" type="button">найти</button>
+                                </div>
+                            </div>
+                            <a class="icon-link" href="#">
+                                <svg viewBox="0 -28 512.001 512" xmlns="http://www.w3.org/2000/svg" id="fi_1077035"><path d="m256 455.515625c-7.289062 0-14.316406-2.640625-19.792969-7.4375-20.683593-18.085937-40.625-35.082031-58.21875-50.074219l-.089843-.078125c-51.582032-43.957031-96.125-81.917969-127.117188-119.3125-34.644531-41.804687-50.78125-81.441406-50.78125-124.742187 0-42.070313 14.425781-80.882813 40.617188-109.292969 26.503906-28.746094 62.871093-44.578125 102.414062-44.578125 29.554688 0 56.621094 9.34375 80.445312 27.769531 12.023438 9.300781 22.921876 20.683594 32.523438 33.960938 9.605469-13.277344 20.5-24.660157 32.527344-33.960938 23.824218-18.425781 50.890625-27.769531 80.445312-27.769531 39.539063 0 75.910156 15.832031 102.414063 44.578125 26.191406 28.410156 40.613281 67.222656 40.613281 109.292969 0 43.300781-16.132812 82.9375-50.777344 124.738281-30.992187 37.398437-75.53125 75.355469-127.105468 119.308594-17.625 15.015625-37.597657 32.039062-58.328126 50.167969-5.472656 4.789062-12.503906 7.429687-19.789062 7.429687zm-112.96875-425.523437c-31.066406 0-59.605469 12.398437-80.367188 34.914062-21.070312 22.855469-32.675781 54.449219-32.675781 88.964844 0 36.417968 13.535157 68.988281 43.882813 105.605468 29.332031 35.394532 72.960937 72.574219 123.476562 115.625l.09375.078126c17.660156 15.050781 37.679688 32.113281 58.515625 50.332031 20.960938-18.253907 41.011719-35.34375 58.707031-50.417969 50.511719-43.050781 94.136719-80.222656 123.46875-115.617188 30.34375-36.617187 43.878907-69.1875 43.878907-105.605468 0-34.515625-11.605469-66.109375-32.675781-88.964844-20.757813-22.515625-49.300782-34.914062-80.363282-34.914062-22.757812 0-43.652344 7.234374-62.101562 21.5-16.441406 12.71875-27.894532 28.796874-34.609375 40.046874-3.453125 5.785157-9.53125 9.238282-16.261719 9.238282s-12.808594-3.453125-16.261719-9.238282c-6.710937-11.25-18.164062-27.328124-34.609375-40.046874-18.449218-14.265626-39.34375-21.5-62.097656-21.5zm0 0"></path></svg>
+                            </a>
+                            <a class="icon-link icon-link-shop" href="#">
+                                <svg height="512pt" viewBox="0 -31 512.00026 512" width="512pt" xmlns="http://www.w3.org/2000/svg" id="fi_1170678"><path d="m164.960938 300.003906h.023437c.019531 0 .039063-.003906.058594-.003906h271.957031c6.695312 0 12.582031-4.441406 14.421875-10.878906l60-210c1.292969-4.527344.386719-9.394532-2.445313-13.152344-2.835937-3.757812-7.269531-5.96875-11.976562-5.96875h-366.632812l-10.722657-48.253906c-1.527343-6.863282-7.613281-11.746094-14.644531-11.746094h-90c-8.285156 0-15 6.714844-15 15s6.714844 15 15 15h77.96875c1.898438 8.550781 51.3125 230.917969 54.15625 243.710938-15.941406 6.929687-27.125 22.824218-27.125 41.289062 0 24.8125 20.1875 45 45 45h272c8.285156 0 15-6.714844 15-15s-6.714844-15-15-15h-272c-8.269531 0-15-6.730469-15-15 0-8.257812 6.707031-14.976562 14.960938-14.996094zm312.152343-210.003906-51.429687 180h-248.652344l-40-180zm0 0"></path><path d="m150 405c0 24.8125 20.1875 45 45 45s45-20.1875 45-45-20.1875-45-45-45-45 20.1875-45 45zm45-15c8.269531 0 15 6.730469 15 15s-6.730469 15-15 15-15-6.730469-15-15 6.730469-15 15-15zm0 0"></path><path d="m362 405c0 24.8125 20.1875 45 45 45s45-20.1875 45-45-20.1875-45-45-45-45 20.1875-45 45zm45-15c8.269531 0 15 6.730469 15 15s-6.730469 15-15 15-15-6.730469-15-15 6.730469-15 15-15zm0 0"></path></svg>
+                                <p>5</p>
+                            </a>
+                            <div class="leng">
+                                <a class="active" href="#">UA</a>
+                                <a href="#">RU</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="navbar-1 navbar-3">
+                    <div class="container">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Ткани</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Фурнитура</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">По применению</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Акции</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">АТЕЛЬЕ</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="shop">
+        <div class="container">
+            <div class="shop__title">
+                <h3><a href="#">TEXITILE PLACE</a> > <a href="#">Ткани</a></h3>
+                <h4>Ткани</h4>
+            </div>
+            
+            <div class="row">
+                <div class="col-3">
+                    <div class="frame">
+                        <h5>Ткани</h5>
+                        <div class="check-m" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            <div class="form_check " data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                <input type="checkbox" class="form-check_input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Атласные ткани</label>
+                                <div class="arrow"></div>
+                            </div>
+                            <div class="collapse" id="collapseExample">
+                                
+                            </div>
+                        </div>
+                        <div class="check-m" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            <div class="form_check " data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                <input type="checkbox" class="form-check_input" id="exampleCheck2">
+                                <label class="form-check-label" for="exampleCheck2">Рубашечно-блузочные ткани</label>
+                                <div class="arrow"></div>
+                            </div>
+                            <div class="collapse" id="collapseExample">
+                                
+                            </div>
+                        </div>
+                        <div class="check-m" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            <div class="form_check " data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                <input type="checkbox" class="form-check_input" id="exampleCheck3">
+                                <label class="form-check-label" for="exampleCheck3">Костюмно-плательные ткани</label>
+                                <div class="arrow"></div>
+                            </div>
+                            <div class="collapse" id="collapseExample">
+                                
+                            </div>
+                        </div>
+                        <div class="check-m" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            <div class="form_check " data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                <input type="checkbox" class="form-check_input" id="exampleCheck4">
+                                <label class="form-check-label" for="exampleCheck4">Жаккардовые ткани</label>
+                                <div class="arrow"></div>
+                            </div>
+                            <div class="collapse" id="collapseExample">
+                                
+                            </div>
+                        </div>
+                        <div class="check-m" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            <div class="form_check " data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                <input type="checkbox" class="form-check_input" id="exampleCheck5">
+                                <label class="form-check-label" for="exampleCheck5">Пальтовые ткани</label>
+                                <div class="arrow"></div>
+                            </div>
+                            <div class="collapse" id="collapseExample">
+                                
+                            </div>
+                        </div>
+                        <div class="check-m" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            <div class="form_check " data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                <input type="checkbox" class="form-check_input" id="exampleCheck6">
+                                <label class="form-check-label" for="exampleCheck6">Курточные ткани</label>
+                                <div class="arrow"></div>
+                            </div>
+                            <div class="collapse" id="collapseExample">
+                                
+                            </div>
+                        </div>
+                        <div class="check-m" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            <div class="form_check " data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                <input type="checkbox" class="form-check_input" id="exampleCheck7">
+                                <label class="form-check-label" for="exampleCheck7">Ворсовые ткани</label>
+                                <div class="arrow"></div>
+                            </div>
+                            <div class="collapse" id="collapseExample">
+                                
+                            </div>
+                        </div>
+                        <div class="check-m" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            <div class="form_check " data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                <input type="checkbox" class="form-check_input" id="exampleCheck8">
+                                <label class="form-check-label" for="exampleCheck8">Коттоновые ткани</label>
+                                <div class="arrow"></div>
+                            </div>
+                            <div class="collapse" id="collapseExample">
+                                
+                            </div>
+                        </div>
+                        <div class="check-m" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            <div class="form_check " data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                <input type="checkbox" class="form-check_input" id="exampleCheck9">
+                                <label class="form-check-label" for="exampleCheck9">Льняные ткани</label>
+                                <div class="arrow"></div>
+                            </div>
+                            <div class="collapse" id="collapseExample">
+                                
+                            </div>
+                        </div>
+                        <div class="check-m" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            <div class="form_check " data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                <input type="checkbox" class="form-check_input" id="exampleCheck10">
+                                <label class="form-check-label" for="exampleCheck10">Кружевные ткани</label>
+                                <div class="arrow"></div>
+                            </div>
+                            <div class="collapse" id="collapseExample">
+                                
+                            </div>
+                        </div>
+                        <div class="check-m" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            <div class="form_check " data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                <input type="checkbox" class="form-check_input" id="exampleCheck11">
+                                <label class="form-check-label" for="exampleCheck11">Подкладочные ткани</label>
+                                <div class="arrow"></div>
+                            </div>
+                            <div class="collapse" id="collapseExample">
+                                
+                            </div>
+                        </div>
+                        <div class="check-m" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            <div class="form_check " data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                <input type="checkbox" class="form-check_input" id="exampleCheck12">
+                                <label class="form-check-label" for="exampleCheck12">Трикотажные ткани</label>
+                                <div class="arrow"></div>
+                            </div>
+                            <div class="collapse" id="collapseExample">
+                                
+                            </div>
+                        </div>
+                        <div class="check-m" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            <div class="form_check " data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                <input type="checkbox" class="form-check_input" id="exampleCheck13">
+                                <label class="form-check-label" for="exampleCheck13">Крепдешин</label>
+                                <div class="arrow"></div>
+                            </div>
+                            <div class="collapse" id="collapseExample">
+                                
+                            </div>
+                        </div>
+                        <div class="check-m" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            <div class="form_check " data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                <input type="checkbox" class="form-check_input" id="exampleCheck14">
+                                <label class="form-check-label" for="exampleCheck14">Шифон</label>
+                                <div class="arrow"></div>
+                            </div>
+                            <div class="collapse" id="collapseExample">
+                                
+                            </div>
+                        </div>
+                        <div class="check-m" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            <div class="form_check " data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                <input type="checkbox" class="form-check_input" id="exampleCheck15">
+                                <label class="form-check-label" for="exampleCheck15">Органза</label>
+                                <div class="arrow"></div>
+                            </div>
+                            <div class="collapse" id="collapseExample">
+                                
+                            </div>
+                        </div>
+                        <div class="check-m" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            <div class="form_check " data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                <input type="checkbox" class="form-check_input" id="exampleCheck16">
+                                <label class="form-check-label" for="exampleCheck16">Сетка</label>
+                                <div class="arrow"></div>
+                            </div>
+                            <div class="collapse" id="collapseExample">
+                                
+                            </div>
+                        </div>
+                        <div class="check-m" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            <div class="form_check " data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                <input type="checkbox" class="form-check_input" id="exampleCheck17">
+                                <label class="form-check-label" for="exampleCheck17">Тафта</label>
+                                <div class="arrow"></div>
+                            </div>
+                            <div class="collapse" id="collapseExample">
+                                
+                            </div>
+                        </div>
+                        <div class="check-m" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            <div class="form_check " data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                <input type="checkbox" class="form-check_input" id="exampleCheck18">
+                                <label class="form-check-label" for="exampleCheck18">Фатин</label>
+                                <div class="arrow"></div>
+                            </div>
+                            <div class="collapse" id="collapseExample">
+                                
+                            </div>
+                        </div>
+                        <div class="check-m" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            <div class="form_check " data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                <input type="checkbox" class="form-check_input" id="exampleCheck19">
+                                <label class="form-check-label" for="exampleCheck19">Кожа</label>
+                                <div class="arrow"></div>
+                            </div>
+                            <div class="collapse" id="collapseExample">
+                                
+                            </div>
+                        </div>
+                        <div class="check-m" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            <div class="form_check " data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                <input type="checkbox" class="form-check_input" id="exampleCheck20">
+                                <label class="form-check-label" for="exampleCheck20">Мех</label>
+                                <div class="arrow"></div>
+                            </div>
+                            <div class="collapse" id="collapseExample">
+                                
+                            </div>
+                        </div>
+
+                        <div class="check-m" data-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            <div class="form_check " data-toggle="collapse" data-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample">
+                                <input type="checkbox" class="form-check_input" id="exampleCheck2">
+                                <label class="form-check-label" for="exampleCheck2">Прикладные материалы</label>
+                                <div class="arrow"></div>
+                            </div>
+                            <div class="collapse" id="collapseExample1">
+                                <div class="card card-body">
+                                    <div class="form_check ">
+                                        <input type="checkbox" class="form-check_input" id="exampleCheck21">
+                                        <label class="form-check-label" for="exampleCheck21">дублерин</label>
+                                    </div>
+                                    <div class="form_check ">
+                                        <input type="checkbox" class="form-check_input" id="exampleCheck22">
+                                        <label class="form-check-label" for="exampleCheck22">канва</label>
+                                    </div>
+                                    <div class="form_check ">
+                                        <input type="checkbox" class="form-check_input" id="exampleCheck23">
+                                        <label class="form-check-label" for="exampleCheck23">синтепон</label>
+                                    </div>
+                                    <div class="form_check ">
+                                        <input type="checkbox" class="form-check_input" id="exampleCheck24">
+                                        <label class="form-check-label" for="exampleCheck24">слимтекс</label>
+                                    </div>
+                                    <div class="form_check ">
+                                        <input type="checkbox" class="form-check_input" id="exampleCheck25">
+                                        <label class="form-check-label" for="exampleCheck25">флизелин</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="frame frame-topn">
+                        <h5>Состав</h5>
+                        <div class="form_check check-m">
+                            <input type="checkbox" class="form-check_input" id="exampleCheck31">
+                            <label class="form-check-label" for="exampleCheck31">Эластан</label>
+                        </div>
+                        <div class="form_check check-m">
+                            <input type="checkbox" class="form-check_input" id="exampleCheck32">
+                            <label class="form-check-label" for="exampleCheck32">Полиэстер</label>
+                        </div>
+                    </div>
+
+                    <div class="frame frame-topn">
+                        <h5>Ширина</h5>
+                        <div id='idA' class="range">
+                            <div id='idB' ></div>
+                            <button id='idC' class="range__button_1"></button>
+                            <button id='idD' class="range__button_2"></button>
+                            <div class="inputs">
+                                <input id='idE' class='range_inpt1' type='number' min='20' max='2000'>
+                                <input id='idF' class='range_inpt2' type='number' min='20' max='2000'>
+                                <a href="#" class="btn">ок</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="frame frame-topn">
+                        <h5>Плотность (Г/М2):</h5>
+                        <div id='idA1' class="range">
+                            <div id='idB1' ></div>
+                            <button id='idC1' class="range__button_1"></button>
+                            <button id='idD1' class="range__button_2"></button>
+                            <div class="inputs">
+                                <input id='idE1' class='range_inpt1' type='number' min='20' max='2000'>
+                                <input id='idF1' class='range_inpt2' type='number' min='20' max='2000'>
+                                <a href="#" class="btn">ок</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="frame frame-topn">
+                        <h5>Цвет:</h5>
+                        <div class="d-flex">
+                            <a class="color color-1" href="#"></a>
+                            <a class="color color-2" href="#"></a>
+                            <a class="color color-3" href="#"></a>
+                            <a class="color color-4" href="#"></a>
+                            <a class="color color-5" href="#"></a>
+                        </div>
+                    </div>
+
+                    <div class="frame frame-topn">
+                        <h5>Цена</h5>
+                        <div id='idA2' class="range">
+                            <div id='idB2' ></div>
+                            <button id='idC2' class="range__button_1"></button>
+                            <button id='idD2' class="range__button_2"></button>
+                            <div class="inputs">
+                                <input id='idE2' class='range_inpt1' type='number' min='20' max='2000'>
+                                <input id='idF2' class='range_inpt2' type='number' min='20' max='2000'>
+                                <a href="#" class="btn">ок</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-9">
+                    <div class="shop-nav">
+                        <p>Сортировать по:</p>
+                        <a href="#" class="shop-link">• Цена</a>
+                        <a href="#" class="shop-link">• Рейтинг</a>
+                        <a href="#" class="shop-link">• Дата добавления</a>
+                    </div>
+    
+                    <div class="sim-slider">
+                        <ul class="sim-slider-list">
+                          <li><img src="img/slide-1.png" alt="screen"></li> <!-- это экран -->
+                          <li class="sim-slider-element"><img src="img/slide-1.png" alt="0"></li>
+                          <li class="sim-slider-element"><img src="img/slide-2.png" alt="1"></li>
+                        </ul>
+                        <div class="sim-slider-arrow-left">
+                            <span class="stick stick-1"></span>
+                            <span class="stick stick-2"></span>
+                        </div>
+                        <div class="sim-slider-arrow-right">
+                            <span class="stick stick-1"></span>
+                            <span class="stick stick-2"></span>
+                        </div>
+                      </div>
+    
+                      <div class="row">
+                        <div class="card col-4">
+                            <img class="card-img-top" src="img/card.png" alt="Card image cap">
+                            <svg class="like" viewBox="0 -28 512.001 512" xmlns="http://www.w3.org/2000/svg" id="fi_1077035"><path d="m256 455.515625c-7.289062 0-14.316406-2.640625-19.792969-7.4375-20.683593-18.085937-40.625-35.082031-58.21875-50.074219l-.089843-.078125c-51.582032-43.957031-96.125-81.917969-127.117188-119.3125-34.644531-41.804687-50.78125-81.441406-50.78125-124.742187 0-42.070313 14.425781-80.882813 40.617188-109.292969 26.503906-28.746094 62.871093-44.578125 102.414062-44.578125 29.554688 0 56.621094 9.34375 80.445312 27.769531 12.023438 9.300781 22.921876 20.683594 32.523438 33.960938 9.605469-13.277344 20.5-24.660157 32.527344-33.960938 23.824218-18.425781 50.890625-27.769531 80.445312-27.769531 39.539063 0 75.910156 15.832031 102.414063 44.578125 26.191406 28.410156 40.613281 67.222656 40.613281 109.292969 0 43.300781-16.132812 82.9375-50.777344 124.738281-30.992187 37.398437-75.53125 75.355469-127.105468 119.308594-17.625 15.015625-37.597657 32.039062-58.328126 50.167969-5.472656 4.789062-12.503906 7.429687-19.789062 7.429687zm-112.96875-425.523437c-31.066406 0-59.605469 12.398437-80.367188 34.914062-21.070312 22.855469-32.675781 54.449219-32.675781 88.964844 0 36.417968 13.535157 68.988281 43.882813 105.605468 29.332031 35.394532 72.960937 72.574219 123.476562 115.625l.09375.078126c17.660156 15.050781 37.679688 32.113281 58.515625 50.332031 20.960938-18.253907 41.011719-35.34375 58.707031-50.417969 50.511719-43.050781 94.136719-80.222656 123.46875-115.617188 30.34375-36.617187 43.878907-69.1875 43.878907-105.605468 0-34.515625-11.605469-66.109375-32.675781-88.964844-20.757813-22.515625-49.300782-34.914062-80.363282-34.914062-22.757812 0-43.652344 7.234374-62.101562 21.5-16.441406 12.71875-27.894532 28.796874-34.609375 40.046874-3.453125 5.785157-9.53125 9.238282-16.261719 9.238282s-12.808594-3.453125-16.261719-9.238282c-6.710937-11.25-18.164062-27.328124-34.609375-40.046874-18.449218-14.265626-39.34375-21.5-62.097656-21.5zm0 0"></path></svg>
+                            <div class="card-body">
+                              <h5 class="card-title">Атлас однотонный</h5>
+                              <p class="card-text"><span>962/2013</span></p>
+                              <p class="card-text">Состав: 97 % SE; 3% EA</p>
+                              <div class="card-text-box">
+                                <p class="card-text"><span>90 грн <hr></span></p>
+                                <p class="card-text">80 грн</p>
+                              </div>
+                              <a href="#" class="btn">Купить</a>
+                              <div class="opt">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="28" viewBox="0 0 27 28">
+                                    <g id="Векторный_смарт-объект" data-name="Векторный смарт-объект" transform="translate(-840 -1278)">
+                                      <g id="Векторный_смарт-объект-2" data-name="Векторный смарт-объект" transform="translate(839.235 1278)">
+                                        <path id="Контур_1" data-name="Контур 1" d="M27.765,5.959a.876.876,0,0,0-.553-.81L14.6.066a.909.909,0,0,0-.678,0L1.319,5.149a.876.876,0,0,0-.553.81V22.041a.876.876,0,0,0,.553.81l12.607,5.083a.906.906,0,0,0,.677,0l12.609-5.083a.876.876,0,0,0,.553-.81Zm-13.5,4.21L9.62,8.3,19.659,4l4.956,2ZM2.551,7.34,6.558,8.955v4.559a.893.893,0,0,0,1.785,0V9.675L13.373,11.7V25.817L2.551,21.454ZM14.265,1.823,17.36,3.071,7.321,7.368,3.916,6Zm.893,9.88L25.98,7.34V21.454L15.158,25.817Z"/>
+                                      </g>
+                                      <path id="Color_Overlay" data-name="Color Overlay" d="M853.16,1305.934l-12.607-5.083a.876.876,0,0,1-.554-.81v-16.082a.876.876,0,0,1,.554-.81l12.607-5.083a.912.912,0,0,1,.679,0l12.607,5.083a.876.876,0,0,1,.553.81v16.082a.876.876,0,0,1-.553.81l-12.608,5.083h0a.909.909,0,0,1-.678,0Zm1.232-16.231v14.115l10.823-4.363v-14.115Zm-12.607,9.751,10.822,4.363V1289.7l-5.028-2.028v3.839a.893.893,0,0,1-1.786,0v-4.559l-4.008-1.616Zm7.069-13.159,4.645,1.873L863.85,1284l-4.956-2Zm-5.7-2.3,3.4,1.372,10.039-4.3-3.094-1.247Z" fill="#b4b4b4"/>
+                                    </g>
+                                </svg>
+                                <p><span>Опт</span></p>                          
+                              </div>
+                            </div>
+                        </div>
+                        <div class="card col-4">
+                            <img class="card-img-top" src="img/card.png" alt="Card image cap">
+                            <svg class="like" viewBox="0 -28 512.001 512" xmlns="http://www.w3.org/2000/svg" id="fi_1077035"><path d="m256 455.515625c-7.289062 0-14.316406-2.640625-19.792969-7.4375-20.683593-18.085937-40.625-35.082031-58.21875-50.074219l-.089843-.078125c-51.582032-43.957031-96.125-81.917969-127.117188-119.3125-34.644531-41.804687-50.78125-81.441406-50.78125-124.742187 0-42.070313 14.425781-80.882813 40.617188-109.292969 26.503906-28.746094 62.871093-44.578125 102.414062-44.578125 29.554688 0 56.621094 9.34375 80.445312 27.769531 12.023438 9.300781 22.921876 20.683594 32.523438 33.960938 9.605469-13.277344 20.5-24.660157 32.527344-33.960938 23.824218-18.425781 50.890625-27.769531 80.445312-27.769531 39.539063 0 75.910156 15.832031 102.414063 44.578125 26.191406 28.410156 40.613281 67.222656 40.613281 109.292969 0 43.300781-16.132812 82.9375-50.777344 124.738281-30.992187 37.398437-75.53125 75.355469-127.105468 119.308594-17.625 15.015625-37.597657 32.039062-58.328126 50.167969-5.472656 4.789062-12.503906 7.429687-19.789062 7.429687zm-112.96875-425.523437c-31.066406 0-59.605469 12.398437-80.367188 34.914062-21.070312 22.855469-32.675781 54.449219-32.675781 88.964844 0 36.417968 13.535157 68.988281 43.882813 105.605468 29.332031 35.394532 72.960937 72.574219 123.476562 115.625l.09375.078126c17.660156 15.050781 37.679688 32.113281 58.515625 50.332031 20.960938-18.253907 41.011719-35.34375 58.707031-50.417969 50.511719-43.050781 94.136719-80.222656 123.46875-115.617188 30.34375-36.617187 43.878907-69.1875 43.878907-105.605468 0-34.515625-11.605469-66.109375-32.675781-88.964844-20.757813-22.515625-49.300782-34.914062-80.363282-34.914062-22.757812 0-43.652344 7.234374-62.101562 21.5-16.441406 12.71875-27.894532 28.796874-34.609375 40.046874-3.453125 5.785157-9.53125 9.238282-16.261719 9.238282s-12.808594-3.453125-16.261719-9.238282c-6.710937-11.25-18.164062-27.328124-34.609375-40.046874-18.449218-14.265626-39.34375-21.5-62.097656-21.5zm0 0"></path></svg>
+                            <div class="card-body">
+                              <h5 class="card-title">Атлас однотонный</h5>
+                              <p class="card-text"><span>962/2013</span></p>
+                              <p class="card-text">Состав: 97 % SE; 3% EA</p>
+                              <div class="card-text-box">
+                                <p class="card-text"><span>90 грн <hr></span></p>
+                                <p class="card-text">80 грн</p>
+                              </div>
+                              <a href="#" class="btn">Купить</a>
+                              <div class="opt">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="28" viewBox="0 0 27 28">
+                                    <g id="Векторный_смарт-объект" data-name="Векторный смарт-объект" transform="translate(-840 -1278)">
+                                      <g id="Векторный_смарт-объект-2" data-name="Векторный смарт-объект" transform="translate(839.235 1278)">
+                                        <path id="Контур_1" data-name="Контур 1" d="M27.765,5.959a.876.876,0,0,0-.553-.81L14.6.066a.909.909,0,0,0-.678,0L1.319,5.149a.876.876,0,0,0-.553.81V22.041a.876.876,0,0,0,.553.81l12.607,5.083a.906.906,0,0,0,.677,0l12.609-5.083a.876.876,0,0,0,.553-.81Zm-13.5,4.21L9.62,8.3,19.659,4l4.956,2ZM2.551,7.34,6.558,8.955v4.559a.893.893,0,0,0,1.785,0V9.675L13.373,11.7V25.817L2.551,21.454ZM14.265,1.823,17.36,3.071,7.321,7.368,3.916,6Zm.893,9.88L25.98,7.34V21.454L15.158,25.817Z"/>
+                                      </g>
+                                      <path id="Color_Overlay" data-name="Color Overlay" d="M853.16,1305.934l-12.607-5.083a.876.876,0,0,1-.554-.81v-16.082a.876.876,0,0,1,.554-.81l12.607-5.083a.912.912,0,0,1,.679,0l12.607,5.083a.876.876,0,0,1,.553.81v16.082a.876.876,0,0,1-.553.81l-12.608,5.083h0a.909.909,0,0,1-.678,0Zm1.232-16.231v14.115l10.823-4.363v-14.115Zm-12.607,9.751,10.822,4.363V1289.7l-5.028-2.028v3.839a.893.893,0,0,1-1.786,0v-4.559l-4.008-1.616Zm7.069-13.159,4.645,1.873L863.85,1284l-4.956-2Zm-5.7-2.3,3.4,1.372,10.039-4.3-3.094-1.247Z" fill="#b4b4b4"/>
+                                    </g>
+                                </svg>
+                                <p><span>Опт</span></p>                          
+                              </div>
+                            </div>
+                        </div>
+                        <div class="card col-4">
+                            <img class="card-img-top" src="img/card.png" alt="Card image cap">
+                            <svg class="like" viewBox="0 -28 512.001 512" xmlns="http://www.w3.org/2000/svg" id="fi_1077035"><path d="m256 455.515625c-7.289062 0-14.316406-2.640625-19.792969-7.4375-20.683593-18.085937-40.625-35.082031-58.21875-50.074219l-.089843-.078125c-51.582032-43.957031-96.125-81.917969-127.117188-119.3125-34.644531-41.804687-50.78125-81.441406-50.78125-124.742187 0-42.070313 14.425781-80.882813 40.617188-109.292969 26.503906-28.746094 62.871093-44.578125 102.414062-44.578125 29.554688 0 56.621094 9.34375 80.445312 27.769531 12.023438 9.300781 22.921876 20.683594 32.523438 33.960938 9.605469-13.277344 20.5-24.660157 32.527344-33.960938 23.824218-18.425781 50.890625-27.769531 80.445312-27.769531 39.539063 0 75.910156 15.832031 102.414063 44.578125 26.191406 28.410156 40.613281 67.222656 40.613281 109.292969 0 43.300781-16.132812 82.9375-50.777344 124.738281-30.992187 37.398437-75.53125 75.355469-127.105468 119.308594-17.625 15.015625-37.597657 32.039062-58.328126 50.167969-5.472656 4.789062-12.503906 7.429687-19.789062 7.429687zm-112.96875-425.523437c-31.066406 0-59.605469 12.398437-80.367188 34.914062-21.070312 22.855469-32.675781 54.449219-32.675781 88.964844 0 36.417968 13.535157 68.988281 43.882813 105.605468 29.332031 35.394532 72.960937 72.574219 123.476562 115.625l.09375.078126c17.660156 15.050781 37.679688 32.113281 58.515625 50.332031 20.960938-18.253907 41.011719-35.34375 58.707031-50.417969 50.511719-43.050781 94.136719-80.222656 123.46875-115.617188 30.34375-36.617187 43.878907-69.1875 43.878907-105.605468 0-34.515625-11.605469-66.109375-32.675781-88.964844-20.757813-22.515625-49.300782-34.914062-80.363282-34.914062-22.757812 0-43.652344 7.234374-62.101562 21.5-16.441406 12.71875-27.894532 28.796874-34.609375 40.046874-3.453125 5.785157-9.53125 9.238282-16.261719 9.238282s-12.808594-3.453125-16.261719-9.238282c-6.710937-11.25-18.164062-27.328124-34.609375-40.046874-18.449218-14.265626-39.34375-21.5-62.097656-21.5zm0 0"></path></svg>
+                            <div class="card-body">
+                              <h5 class="card-title">Атлас однотонный</h5>
+                              <p class="card-text"><span>962/2013</span></p>
+                              <p class="card-text">Состав: 97 % SE; 3% EA</p>
+                              <div class="card-text-box">
+                                <p class="card-text"><span>90 грн <hr></span></p>
+                                <p class="card-text">80 грн</p>
+                              </div>
+                              <a href="#" class="btn">Купить</a>
+                              <div class="opt">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="28" viewBox="0 0 27 28">
+                                    <g id="Векторный_смарт-объект" data-name="Векторный смарт-объект" transform="translate(-840 -1278)">
+                                      <g id="Векторный_смарт-объект-2" data-name="Векторный смарт-объект" transform="translate(839.235 1278)">
+                                        <path id="Контур_1" data-name="Контур 1" d="M27.765,5.959a.876.876,0,0,0-.553-.81L14.6.066a.909.909,0,0,0-.678,0L1.319,5.149a.876.876,0,0,0-.553.81V22.041a.876.876,0,0,0,.553.81l12.607,5.083a.906.906,0,0,0,.677,0l12.609-5.083a.876.876,0,0,0,.553-.81Zm-13.5,4.21L9.62,8.3,19.659,4l4.956,2ZM2.551,7.34,6.558,8.955v4.559a.893.893,0,0,0,1.785,0V9.675L13.373,11.7V25.817L2.551,21.454ZM14.265,1.823,17.36,3.071,7.321,7.368,3.916,6Zm.893,9.88L25.98,7.34V21.454L15.158,25.817Z"/>
+                                      </g>
+                                      <path id="Color_Overlay" data-name="Color Overlay" d="M853.16,1305.934l-12.607-5.083a.876.876,0,0,1-.554-.81v-16.082a.876.876,0,0,1,.554-.81l12.607-5.083a.912.912,0,0,1,.679,0l12.607,5.083a.876.876,0,0,1,.553.81v16.082a.876.876,0,0,1-.553.81l-12.608,5.083h0a.909.909,0,0,1-.678,0Zm1.232-16.231v14.115l10.823-4.363v-14.115Zm-12.607,9.751,10.822,4.363V1289.7l-5.028-2.028v3.839a.893.893,0,0,1-1.786,0v-4.559l-4.008-1.616Zm7.069-13.159,4.645,1.873L863.85,1284l-4.956-2Zm-5.7-2.3,3.4,1.372,10.039-4.3-3.094-1.247Z" fill="#b4b4b4"/>
+                                    </g>
+                                </svg>
+                                <p><span>Опт</span></p>                          
+                              </div>
+                            </div>
+                        </div>
+                        <div class="card col-4">
+                            <img class="card-img-top" src="img/card.png" alt="Card image cap">
+                            <svg class="like" viewBox="0 -28 512.001 512" xmlns="http://www.w3.org/2000/svg" id="fi_1077035"><path d="m256 455.515625c-7.289062 0-14.316406-2.640625-19.792969-7.4375-20.683593-18.085937-40.625-35.082031-58.21875-50.074219l-.089843-.078125c-51.582032-43.957031-96.125-81.917969-127.117188-119.3125-34.644531-41.804687-50.78125-81.441406-50.78125-124.742187 0-42.070313 14.425781-80.882813 40.617188-109.292969 26.503906-28.746094 62.871093-44.578125 102.414062-44.578125 29.554688 0 56.621094 9.34375 80.445312 27.769531 12.023438 9.300781 22.921876 20.683594 32.523438 33.960938 9.605469-13.277344 20.5-24.660157 32.527344-33.960938 23.824218-18.425781 50.890625-27.769531 80.445312-27.769531 39.539063 0 75.910156 15.832031 102.414063 44.578125 26.191406 28.410156 40.613281 67.222656 40.613281 109.292969 0 43.300781-16.132812 82.9375-50.777344 124.738281-30.992187 37.398437-75.53125 75.355469-127.105468 119.308594-17.625 15.015625-37.597657 32.039062-58.328126 50.167969-5.472656 4.789062-12.503906 7.429687-19.789062 7.429687zm-112.96875-425.523437c-31.066406 0-59.605469 12.398437-80.367188 34.914062-21.070312 22.855469-32.675781 54.449219-32.675781 88.964844 0 36.417968 13.535157 68.988281 43.882813 105.605468 29.332031 35.394532 72.960937 72.574219 123.476562 115.625l.09375.078126c17.660156 15.050781 37.679688 32.113281 58.515625 50.332031 20.960938-18.253907 41.011719-35.34375 58.707031-50.417969 50.511719-43.050781 94.136719-80.222656 123.46875-115.617188 30.34375-36.617187 43.878907-69.1875 43.878907-105.605468 0-34.515625-11.605469-66.109375-32.675781-88.964844-20.757813-22.515625-49.300782-34.914062-80.363282-34.914062-22.757812 0-43.652344 7.234374-62.101562 21.5-16.441406 12.71875-27.894532 28.796874-34.609375 40.046874-3.453125 5.785157-9.53125 9.238282-16.261719 9.238282s-12.808594-3.453125-16.261719-9.238282c-6.710937-11.25-18.164062-27.328124-34.609375-40.046874-18.449218-14.265626-39.34375-21.5-62.097656-21.5zm0 0"></path></svg>
+                            <div class="card-body">
+                              <h5 class="card-title">Атлас однотонный</h5>
+                              <p class="card-text"><span>962/2013</span></p>
+                              <p class="card-text">Состав: 97 % SE; 3% EA</p>
+                              <div class="card-text-box">
+                                <p class="card-text"><span>90 грн <hr></span></p>
+                                <p class="card-text">80 грн</p>
+                              </div>
+                              <a href="#" class="btn">Купить</a>
+                              <div class="opt">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="28" viewBox="0 0 27 28">
+                                    <g id="Векторный_смарт-объект" data-name="Векторный смарт-объект" transform="translate(-840 -1278)">
+                                      <g id="Векторный_смарт-объект-2" data-name="Векторный смарт-объект" transform="translate(839.235 1278)">
+                                        <path id="Контур_1" data-name="Контур 1" d="M27.765,5.959a.876.876,0,0,0-.553-.81L14.6.066a.909.909,0,0,0-.678,0L1.319,5.149a.876.876,0,0,0-.553.81V22.041a.876.876,0,0,0,.553.81l12.607,5.083a.906.906,0,0,0,.677,0l12.609-5.083a.876.876,0,0,0,.553-.81Zm-13.5,4.21L9.62,8.3,19.659,4l4.956,2ZM2.551,7.34,6.558,8.955v4.559a.893.893,0,0,0,1.785,0V9.675L13.373,11.7V25.817L2.551,21.454ZM14.265,1.823,17.36,3.071,7.321,7.368,3.916,6Zm.893,9.88L25.98,7.34V21.454L15.158,25.817Z"/>
+                                      </g>
+                                      <path id="Color_Overlay" data-name="Color Overlay" d="M853.16,1305.934l-12.607-5.083a.876.876,0,0,1-.554-.81v-16.082a.876.876,0,0,1,.554-.81l12.607-5.083a.912.912,0,0,1,.679,0l12.607,5.083a.876.876,0,0,1,.553.81v16.082a.876.876,0,0,1-.553.81l-12.608,5.083h0a.909.909,0,0,1-.678,0Zm1.232-16.231v14.115l10.823-4.363v-14.115Zm-12.607,9.751,10.822,4.363V1289.7l-5.028-2.028v3.839a.893.893,0,0,1-1.786,0v-4.559l-4.008-1.616Zm7.069-13.159,4.645,1.873L863.85,1284l-4.956-2Zm-5.7-2.3,3.4,1.372,10.039-4.3-3.094-1.247Z" fill="#b4b4b4"/>
+                                    </g>
+                                </svg>
+                                <p><span>Опт</span></p>                          
+                              </div>
+                            </div>
+                        </div>
+                        <div class="card col-4">
+                            <img class="card-img-top" src="img/card.png" alt="Card image cap">
+                            <svg class="like" viewBox="0 -28 512.001 512" xmlns="http://www.w3.org/2000/svg" id="fi_1077035"><path d="m256 455.515625c-7.289062 0-14.316406-2.640625-19.792969-7.4375-20.683593-18.085937-40.625-35.082031-58.21875-50.074219l-.089843-.078125c-51.582032-43.957031-96.125-81.917969-127.117188-119.3125-34.644531-41.804687-50.78125-81.441406-50.78125-124.742187 0-42.070313 14.425781-80.882813 40.617188-109.292969 26.503906-28.746094 62.871093-44.578125 102.414062-44.578125 29.554688 0 56.621094 9.34375 80.445312 27.769531 12.023438 9.300781 22.921876 20.683594 32.523438 33.960938 9.605469-13.277344 20.5-24.660157 32.527344-33.960938 23.824218-18.425781 50.890625-27.769531 80.445312-27.769531 39.539063 0 75.910156 15.832031 102.414063 44.578125 26.191406 28.410156 40.613281 67.222656 40.613281 109.292969 0 43.300781-16.132812 82.9375-50.777344 124.738281-30.992187 37.398437-75.53125 75.355469-127.105468 119.308594-17.625 15.015625-37.597657 32.039062-58.328126 50.167969-5.472656 4.789062-12.503906 7.429687-19.789062 7.429687zm-112.96875-425.523437c-31.066406 0-59.605469 12.398437-80.367188 34.914062-21.070312 22.855469-32.675781 54.449219-32.675781 88.964844 0 36.417968 13.535157 68.988281 43.882813 105.605468 29.332031 35.394532 72.960937 72.574219 123.476562 115.625l.09375.078126c17.660156 15.050781 37.679688 32.113281 58.515625 50.332031 20.960938-18.253907 41.011719-35.34375 58.707031-50.417969 50.511719-43.050781 94.136719-80.222656 123.46875-115.617188 30.34375-36.617187 43.878907-69.1875 43.878907-105.605468 0-34.515625-11.605469-66.109375-32.675781-88.964844-20.757813-22.515625-49.300782-34.914062-80.363282-34.914062-22.757812 0-43.652344 7.234374-62.101562 21.5-16.441406 12.71875-27.894532 28.796874-34.609375 40.046874-3.453125 5.785157-9.53125 9.238282-16.261719 9.238282s-12.808594-3.453125-16.261719-9.238282c-6.710937-11.25-18.164062-27.328124-34.609375-40.046874-18.449218-14.265626-39.34375-21.5-62.097656-21.5zm0 0"></path></svg>
+                            <div class="card-body">
+                              <h5 class="card-title">Атлас однотонный</h5>
+                              <p class="card-text"><span>962/2013</span></p>
+                              <p class="card-text">Состав: 97 % SE; 3% EA</p>
+                              <div class="card-text-box">
+                                <p class="card-text"><span>90 грн <hr></span></p>
+                                <p class="card-text">80 грн</p>
+                              </div>
+                              <a href="#" class="btn">Купить</a>
+                              <div class="opt">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="28" viewBox="0 0 27 28">
+                                    <g id="Векторный_смарт-объект" data-name="Векторный смарт-объект" transform="translate(-840 -1278)">
+                                      <g id="Векторный_смарт-объект-2" data-name="Векторный смарт-объект" transform="translate(839.235 1278)">
+                                        <path id="Контур_1" data-name="Контур 1" d="M27.765,5.959a.876.876,0,0,0-.553-.81L14.6.066a.909.909,0,0,0-.678,0L1.319,5.149a.876.876,0,0,0-.553.81V22.041a.876.876,0,0,0,.553.81l12.607,5.083a.906.906,0,0,0,.677,0l12.609-5.083a.876.876,0,0,0,.553-.81Zm-13.5,4.21L9.62,8.3,19.659,4l4.956,2ZM2.551,7.34,6.558,8.955v4.559a.893.893,0,0,0,1.785,0V9.675L13.373,11.7V25.817L2.551,21.454ZM14.265,1.823,17.36,3.071,7.321,7.368,3.916,6Zm.893,9.88L25.98,7.34V21.454L15.158,25.817Z"/>
+                                      </g>
+                                      <path id="Color_Overlay" data-name="Color Overlay" d="M853.16,1305.934l-12.607-5.083a.876.876,0,0,1-.554-.81v-16.082a.876.876,0,0,1,.554-.81l12.607-5.083a.912.912,0,0,1,.679,0l12.607,5.083a.876.876,0,0,1,.553.81v16.082a.876.876,0,0,1-.553.81l-12.608,5.083h0a.909.909,0,0,1-.678,0Zm1.232-16.231v14.115l10.823-4.363v-14.115Zm-12.607,9.751,10.822,4.363V1289.7l-5.028-2.028v3.839a.893.893,0,0,1-1.786,0v-4.559l-4.008-1.616Zm7.069-13.159,4.645,1.873L863.85,1284l-4.956-2Zm-5.7-2.3,3.4,1.372,10.039-4.3-3.094-1.247Z" fill="#b4b4b4"/>
+                                    </g>
+                                </svg>
+                                <p><span>Опт</span></p>                          
+                              </div>
+                            </div>
+                        </div>
+                        <div class="card col-4">
+                            <img class="card-img-top" src="img/card.png" alt="Card image cap">
+                            <svg class="like" viewBox="0 -28 512.001 512" xmlns="http://www.w3.org/2000/svg" id="fi_1077035"><path d="m256 455.515625c-7.289062 0-14.316406-2.640625-19.792969-7.4375-20.683593-18.085937-40.625-35.082031-58.21875-50.074219l-.089843-.078125c-51.582032-43.957031-96.125-81.917969-127.117188-119.3125-34.644531-41.804687-50.78125-81.441406-50.78125-124.742187 0-42.070313 14.425781-80.882813 40.617188-109.292969 26.503906-28.746094 62.871093-44.578125 102.414062-44.578125 29.554688 0 56.621094 9.34375 80.445312 27.769531 12.023438 9.300781 22.921876 20.683594 32.523438 33.960938 9.605469-13.277344 20.5-24.660157 32.527344-33.960938 23.824218-18.425781 50.890625-27.769531 80.445312-27.769531 39.539063 0 75.910156 15.832031 102.414063 44.578125 26.191406 28.410156 40.613281 67.222656 40.613281 109.292969 0 43.300781-16.132812 82.9375-50.777344 124.738281-30.992187 37.398437-75.53125 75.355469-127.105468 119.308594-17.625 15.015625-37.597657 32.039062-58.328126 50.167969-5.472656 4.789062-12.503906 7.429687-19.789062 7.429687zm-112.96875-425.523437c-31.066406 0-59.605469 12.398437-80.367188 34.914062-21.070312 22.855469-32.675781 54.449219-32.675781 88.964844 0 36.417968 13.535157 68.988281 43.882813 105.605468 29.332031 35.394532 72.960937 72.574219 123.476562 115.625l.09375.078126c17.660156 15.050781 37.679688 32.113281 58.515625 50.332031 20.960938-18.253907 41.011719-35.34375 58.707031-50.417969 50.511719-43.050781 94.136719-80.222656 123.46875-115.617188 30.34375-36.617187 43.878907-69.1875 43.878907-105.605468 0-34.515625-11.605469-66.109375-32.675781-88.964844-20.757813-22.515625-49.300782-34.914062-80.363282-34.914062-22.757812 0-43.652344 7.234374-62.101562 21.5-16.441406 12.71875-27.894532 28.796874-34.609375 40.046874-3.453125 5.785157-9.53125 9.238282-16.261719 9.238282s-12.808594-3.453125-16.261719-9.238282c-6.710937-11.25-18.164062-27.328124-34.609375-40.046874-18.449218-14.265626-39.34375-21.5-62.097656-21.5zm0 0"></path></svg>
+                            <div class="card-body">
+                              <h5 class="card-title">Атлас однотонный</h5>
+                              <p class="card-text"><span>962/2013</span></p>
+                              <p class="card-text">Состав: 97 % SE; 3% EA</p>
+                              <div class="card-text-box">
+                                <p class="card-text"><span>90 грн <hr></span></p>
+                                <p class="card-text">80 грн</p>
+                              </div>
+                              <a href="#" class="btn">Купить</a>
+                              <div class="opt">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="28" viewBox="0 0 27 28">
+                                    <g id="Векторный_смарт-объект" data-name="Векторный смарт-объект" transform="translate(-840 -1278)">
+                                      <g id="Векторный_смарт-объект-2" data-name="Векторный смарт-объект" transform="translate(839.235 1278)">
+                                        <path id="Контур_1" data-name="Контур 1" d="M27.765,5.959a.876.876,0,0,0-.553-.81L14.6.066a.909.909,0,0,0-.678,0L1.319,5.149a.876.876,0,0,0-.553.81V22.041a.876.876,0,0,0,.553.81l12.607,5.083a.906.906,0,0,0,.677,0l12.609-5.083a.876.876,0,0,0,.553-.81Zm-13.5,4.21L9.62,8.3,19.659,4l4.956,2ZM2.551,7.34,6.558,8.955v4.559a.893.893,0,0,0,1.785,0V9.675L13.373,11.7V25.817L2.551,21.454ZM14.265,1.823,17.36,3.071,7.321,7.368,3.916,6Zm.893,9.88L25.98,7.34V21.454L15.158,25.817Z"/>
+                                      </g>
+                                      <path id="Color_Overlay" data-name="Color Overlay" d="M853.16,1305.934l-12.607-5.083a.876.876,0,0,1-.554-.81v-16.082a.876.876,0,0,1,.554-.81l12.607-5.083a.912.912,0,0,1,.679,0l12.607,5.083a.876.876,0,0,1,.553.81v16.082a.876.876,0,0,1-.553.81l-12.608,5.083h0a.909.909,0,0,1-.678,0Zm1.232-16.231v14.115l10.823-4.363v-14.115Zm-12.607,9.751,10.822,4.363V1289.7l-5.028-2.028v3.839a.893.893,0,0,1-1.786,0v-4.559l-4.008-1.616Zm7.069-13.159,4.645,1.873L863.85,1284l-4.956-2Zm-5.7-2.3,3.4,1.372,10.039-4.3-3.094-1.247Z" fill="#b4b4b4"/>
+                                    </g>
+                                </svg>
+                                <p><span>Опт</span></p>                          
+                              </div>
+                            </div>
+                        </div>
+                        <div class="card col-4">
+                            <img class="card-img-top" src="img/card.png" alt="Card image cap">
+                            <svg class="like" viewBox="0 -28 512.001 512" xmlns="http://www.w3.org/2000/svg" id="fi_1077035"><path d="m256 455.515625c-7.289062 0-14.316406-2.640625-19.792969-7.4375-20.683593-18.085937-40.625-35.082031-58.21875-50.074219l-.089843-.078125c-51.582032-43.957031-96.125-81.917969-127.117188-119.3125-34.644531-41.804687-50.78125-81.441406-50.78125-124.742187 0-42.070313 14.425781-80.882813 40.617188-109.292969 26.503906-28.746094 62.871093-44.578125 102.414062-44.578125 29.554688 0 56.621094 9.34375 80.445312 27.769531 12.023438 9.300781 22.921876 20.683594 32.523438 33.960938 9.605469-13.277344 20.5-24.660157 32.527344-33.960938 23.824218-18.425781 50.890625-27.769531 80.445312-27.769531 39.539063 0 75.910156 15.832031 102.414063 44.578125 26.191406 28.410156 40.613281 67.222656 40.613281 109.292969 0 43.300781-16.132812 82.9375-50.777344 124.738281-30.992187 37.398437-75.53125 75.355469-127.105468 119.308594-17.625 15.015625-37.597657 32.039062-58.328126 50.167969-5.472656 4.789062-12.503906 7.429687-19.789062 7.429687zm-112.96875-425.523437c-31.066406 0-59.605469 12.398437-80.367188 34.914062-21.070312 22.855469-32.675781 54.449219-32.675781 88.964844 0 36.417968 13.535157 68.988281 43.882813 105.605468 29.332031 35.394532 72.960937 72.574219 123.476562 115.625l.09375.078126c17.660156 15.050781 37.679688 32.113281 58.515625 50.332031 20.960938-18.253907 41.011719-35.34375 58.707031-50.417969 50.511719-43.050781 94.136719-80.222656 123.46875-115.617188 30.34375-36.617187 43.878907-69.1875 43.878907-105.605468 0-34.515625-11.605469-66.109375-32.675781-88.964844-20.757813-22.515625-49.300782-34.914062-80.363282-34.914062-22.757812 0-43.652344 7.234374-62.101562 21.5-16.441406 12.71875-27.894532 28.796874-34.609375 40.046874-3.453125 5.785157-9.53125 9.238282-16.261719 9.238282s-12.808594-3.453125-16.261719-9.238282c-6.710937-11.25-18.164062-27.328124-34.609375-40.046874-18.449218-14.265626-39.34375-21.5-62.097656-21.5zm0 0"></path></svg>
+                            <div class="card-body">
+                              <h5 class="card-title">Атлас однотонный</h5>
+                              <p class="card-text"><span>962/2013</span></p>
+                              <p class="card-text">Состав: 97 % SE; 3% EA</p>
+                              <div class="card-text-box">
+                                <p class="card-text"><span>90 грн <hr></span></p>
+                                <p class="card-text">80 грн</p>
+                              </div>
+                              <a href="#" class="btn">Купить</a>
+                              <div class="opt">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="28" viewBox="0 0 27 28">
+                                    <g id="Векторный_смарт-объект" data-name="Векторный смарт-объект" transform="translate(-840 -1278)">
+                                      <g id="Векторный_смарт-объект-2" data-name="Векторный смарт-объект" transform="translate(839.235 1278)">
+                                        <path id="Контур_1" data-name="Контур 1" d="M27.765,5.959a.876.876,0,0,0-.553-.81L14.6.066a.909.909,0,0,0-.678,0L1.319,5.149a.876.876,0,0,0-.553.81V22.041a.876.876,0,0,0,.553.81l12.607,5.083a.906.906,0,0,0,.677,0l12.609-5.083a.876.876,0,0,0,.553-.81Zm-13.5,4.21L9.62,8.3,19.659,4l4.956,2ZM2.551,7.34,6.558,8.955v4.559a.893.893,0,0,0,1.785,0V9.675L13.373,11.7V25.817L2.551,21.454ZM14.265,1.823,17.36,3.071,7.321,7.368,3.916,6Zm.893,9.88L25.98,7.34V21.454L15.158,25.817Z"/>
+                                      </g>
+                                      <path id="Color_Overlay" data-name="Color Overlay" d="M853.16,1305.934l-12.607-5.083a.876.876,0,0,1-.554-.81v-16.082a.876.876,0,0,1,.554-.81l12.607-5.083a.912.912,0,0,1,.679,0l12.607,5.083a.876.876,0,0,1,.553.81v16.082a.876.876,0,0,1-.553.81l-12.608,5.083h0a.909.909,0,0,1-.678,0Zm1.232-16.231v14.115l10.823-4.363v-14.115Zm-12.607,9.751,10.822,4.363V1289.7l-5.028-2.028v3.839a.893.893,0,0,1-1.786,0v-4.559l-4.008-1.616Zm7.069-13.159,4.645,1.873L863.85,1284l-4.956-2Zm-5.7-2.3,3.4,1.372,10.039-4.3-3.094-1.247Z" fill="#b4b4b4"/>
+                                    </g>
+                                </svg>
+                                <p><span>Опт</span></p>                          
+                              </div>
+                            </div>
+                        </div>
+                        <div class="card col-4">
+                            <img class="card-img-top" src="img/card.png" alt="Card image cap">
+                            <svg class="like" viewBox="0 -28 512.001 512" xmlns="http://www.w3.org/2000/svg" id="fi_1077035"><path d="m256 455.515625c-7.289062 0-14.316406-2.640625-19.792969-7.4375-20.683593-18.085937-40.625-35.082031-58.21875-50.074219l-.089843-.078125c-51.582032-43.957031-96.125-81.917969-127.117188-119.3125-34.644531-41.804687-50.78125-81.441406-50.78125-124.742187 0-42.070313 14.425781-80.882813 40.617188-109.292969 26.503906-28.746094 62.871093-44.578125 102.414062-44.578125 29.554688 0 56.621094 9.34375 80.445312 27.769531 12.023438 9.300781 22.921876 20.683594 32.523438 33.960938 9.605469-13.277344 20.5-24.660157 32.527344-33.960938 23.824218-18.425781 50.890625-27.769531 80.445312-27.769531 39.539063 0 75.910156 15.832031 102.414063 44.578125 26.191406 28.410156 40.613281 67.222656 40.613281 109.292969 0 43.300781-16.132812 82.9375-50.777344 124.738281-30.992187 37.398437-75.53125 75.355469-127.105468 119.308594-17.625 15.015625-37.597657 32.039062-58.328126 50.167969-5.472656 4.789062-12.503906 7.429687-19.789062 7.429687zm-112.96875-425.523437c-31.066406 0-59.605469 12.398437-80.367188 34.914062-21.070312 22.855469-32.675781 54.449219-32.675781 88.964844 0 36.417968 13.535157 68.988281 43.882813 105.605468 29.332031 35.394532 72.960937 72.574219 123.476562 115.625l.09375.078126c17.660156 15.050781 37.679688 32.113281 58.515625 50.332031 20.960938-18.253907 41.011719-35.34375 58.707031-50.417969 50.511719-43.050781 94.136719-80.222656 123.46875-115.617188 30.34375-36.617187 43.878907-69.1875 43.878907-105.605468 0-34.515625-11.605469-66.109375-32.675781-88.964844-20.757813-22.515625-49.300782-34.914062-80.363282-34.914062-22.757812 0-43.652344 7.234374-62.101562 21.5-16.441406 12.71875-27.894532 28.796874-34.609375 40.046874-3.453125 5.785157-9.53125 9.238282-16.261719 9.238282s-12.808594-3.453125-16.261719-9.238282c-6.710937-11.25-18.164062-27.328124-34.609375-40.046874-18.449218-14.265626-39.34375-21.5-62.097656-21.5zm0 0"></path></svg>
+                            <div class="card-body">
+                              <h5 class="card-title">Атлас однотонный</h5>
+                              <p class="card-text"><span>962/2013</span></p>
+                              <p class="card-text">Состав: 97 % SE; 3% EA</p>
+                              <div class="card-text-box">
+                                <p class="card-text"><span>90 грн <hr></span></p>
+                                <p class="card-text">80 грн</p>
+                              </div>
+                              <a href="#" class="btn">Купить</a>
+                              <div class="opt">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="28" viewBox="0 0 27 28">
+                                    <g id="Векторный_смарт-объект" data-name="Векторный смарт-объект" transform="translate(-840 -1278)">
+                                      <g id="Векторный_смарт-объект-2" data-name="Векторный смарт-объект" transform="translate(839.235 1278)">
+                                        <path id="Контур_1" data-name="Контур 1" d="M27.765,5.959a.876.876,0,0,0-.553-.81L14.6.066a.909.909,0,0,0-.678,0L1.319,5.149a.876.876,0,0,0-.553.81V22.041a.876.876,0,0,0,.553.81l12.607,5.083a.906.906,0,0,0,.677,0l12.609-5.083a.876.876,0,0,0,.553-.81Zm-13.5,4.21L9.62,8.3,19.659,4l4.956,2ZM2.551,7.34,6.558,8.955v4.559a.893.893,0,0,0,1.785,0V9.675L13.373,11.7V25.817L2.551,21.454ZM14.265,1.823,17.36,3.071,7.321,7.368,3.916,6Zm.893,9.88L25.98,7.34V21.454L15.158,25.817Z"/>
+                                      </g>
+                                      <path id="Color_Overlay" data-name="Color Overlay" d="M853.16,1305.934l-12.607-5.083a.876.876,0,0,1-.554-.81v-16.082a.876.876,0,0,1,.554-.81l12.607-5.083a.912.912,0,0,1,.679,0l12.607,5.083a.876.876,0,0,1,.553.81v16.082a.876.876,0,0,1-.553.81l-12.608,5.083h0a.909.909,0,0,1-.678,0Zm1.232-16.231v14.115l10.823-4.363v-14.115Zm-12.607,9.751,10.822,4.363V1289.7l-5.028-2.028v3.839a.893.893,0,0,1-1.786,0v-4.559l-4.008-1.616Zm7.069-13.159,4.645,1.873L863.85,1284l-4.956-2Zm-5.7-2.3,3.4,1.372,10.039-4.3-3.094-1.247Z" fill="#b4b4b4"/>
+                                    </g>
+                                </svg>
+                                <p><span>Опт</span></p>                          
+                              </div>
+                            </div>
+                        </div>
+                        <div class="card col-4">
+                            <img class="card-img-top" src="img/card.png" alt="Card image cap">
+                            <svg class="like" viewBox="0 -28 512.001 512" xmlns="http://www.w3.org/2000/svg" id="fi_1077035"><path d="m256 455.515625c-7.289062 0-14.316406-2.640625-19.792969-7.4375-20.683593-18.085937-40.625-35.082031-58.21875-50.074219l-.089843-.078125c-51.582032-43.957031-96.125-81.917969-127.117188-119.3125-34.644531-41.804687-50.78125-81.441406-50.78125-124.742187 0-42.070313 14.425781-80.882813 40.617188-109.292969 26.503906-28.746094 62.871093-44.578125 102.414062-44.578125 29.554688 0 56.621094 9.34375 80.445312 27.769531 12.023438 9.300781 22.921876 20.683594 32.523438 33.960938 9.605469-13.277344 20.5-24.660157 32.527344-33.960938 23.824218-18.425781 50.890625-27.769531 80.445312-27.769531 39.539063 0 75.910156 15.832031 102.414063 44.578125 26.191406 28.410156 40.613281 67.222656 40.613281 109.292969 0 43.300781-16.132812 82.9375-50.777344 124.738281-30.992187 37.398437-75.53125 75.355469-127.105468 119.308594-17.625 15.015625-37.597657 32.039062-58.328126 50.167969-5.472656 4.789062-12.503906 7.429687-19.789062 7.429687zm-112.96875-425.523437c-31.066406 0-59.605469 12.398437-80.367188 34.914062-21.070312 22.855469-32.675781 54.449219-32.675781 88.964844 0 36.417968 13.535157 68.988281 43.882813 105.605468 29.332031 35.394532 72.960937 72.574219 123.476562 115.625l.09375.078126c17.660156 15.050781 37.679688 32.113281 58.515625 50.332031 20.960938-18.253907 41.011719-35.34375 58.707031-50.417969 50.511719-43.050781 94.136719-80.222656 123.46875-115.617188 30.34375-36.617187 43.878907-69.1875 43.878907-105.605468 0-34.515625-11.605469-66.109375-32.675781-88.964844-20.757813-22.515625-49.300782-34.914062-80.363282-34.914062-22.757812 0-43.652344 7.234374-62.101562 21.5-16.441406 12.71875-27.894532 28.796874-34.609375 40.046874-3.453125 5.785157-9.53125 9.238282-16.261719 9.238282s-12.808594-3.453125-16.261719-9.238282c-6.710937-11.25-18.164062-27.328124-34.609375-40.046874-18.449218-14.265626-39.34375-21.5-62.097656-21.5zm0 0"></path></svg>
+                            <div class="card-body">
+                              <h5 class="card-title">Атлас однотонный</h5>
+                              <p class="card-text"><span>962/2013</span></p>
+                              <p class="card-text">Состав: 97 % SE; 3% EA</p>
+                              <div class="card-text-box">
+                                <p class="card-text"><span>90 грн <hr></span></p>
+                                <p class="card-text">80 грн</p>
+                              </div>
+                              <a href="#" class="btn">Купить</a>
+                              <div class="opt">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="28" viewBox="0 0 27 28">
+                                    <g id="Векторный_смарт-объект" data-name="Векторный смарт-объект" transform="translate(-840 -1278)">
+                                      <g id="Векторный_смарт-объект-2" data-name="Векторный смарт-объект" transform="translate(839.235 1278)">
+                                        <path id="Контур_1" data-name="Контур 1" d="M27.765,5.959a.876.876,0,0,0-.553-.81L14.6.066a.909.909,0,0,0-.678,0L1.319,5.149a.876.876,0,0,0-.553.81V22.041a.876.876,0,0,0,.553.81l12.607,5.083a.906.906,0,0,0,.677,0l12.609-5.083a.876.876,0,0,0,.553-.81Zm-13.5,4.21L9.62,8.3,19.659,4l4.956,2ZM2.551,7.34,6.558,8.955v4.559a.893.893,0,0,0,1.785,0V9.675L13.373,11.7V25.817L2.551,21.454ZM14.265,1.823,17.36,3.071,7.321,7.368,3.916,6Zm.893,9.88L25.98,7.34V21.454L15.158,25.817Z"/>
+                                      </g>
+                                      <path id="Color_Overlay" data-name="Color Overlay" d="M853.16,1305.934l-12.607-5.083a.876.876,0,0,1-.554-.81v-16.082a.876.876,0,0,1,.554-.81l12.607-5.083a.912.912,0,0,1,.679,0l12.607,5.083a.876.876,0,0,1,.553.81v16.082a.876.876,0,0,1-.553.81l-12.608,5.083h0a.909.909,0,0,1-.678,0Zm1.232-16.231v14.115l10.823-4.363v-14.115Zm-12.607,9.751,10.822,4.363V1289.7l-5.028-2.028v3.839a.893.893,0,0,1-1.786,0v-4.559l-4.008-1.616Zm7.069-13.159,4.645,1.873L863.85,1284l-4.956-2Zm-5.7-2.3,3.4,1.372,10.039-4.3-3.094-1.247Z" fill="#b4b4b4"/>
+                                    </g>
+                                </svg>
+                                <p><span>Опт</span></p>                          
+                              </div>
+                            </div>
+                        </div>
+                        <div class="card col-4">
+                            <img class="card-img-top" src="img/card.png" alt="Card image cap">
+                            <svg class="like" viewBox="0 -28 512.001 512" xmlns="http://www.w3.org/2000/svg" id="fi_1077035"><path d="m256 455.515625c-7.289062 0-14.316406-2.640625-19.792969-7.4375-20.683593-18.085937-40.625-35.082031-58.21875-50.074219l-.089843-.078125c-51.582032-43.957031-96.125-81.917969-127.117188-119.3125-34.644531-41.804687-50.78125-81.441406-50.78125-124.742187 0-42.070313 14.425781-80.882813 40.617188-109.292969 26.503906-28.746094 62.871093-44.578125 102.414062-44.578125 29.554688 0 56.621094 9.34375 80.445312 27.769531 12.023438 9.300781 22.921876 20.683594 32.523438 33.960938 9.605469-13.277344 20.5-24.660157 32.527344-33.960938 23.824218-18.425781 50.890625-27.769531 80.445312-27.769531 39.539063 0 75.910156 15.832031 102.414063 44.578125 26.191406 28.410156 40.613281 67.222656 40.613281 109.292969 0 43.300781-16.132812 82.9375-50.777344 124.738281-30.992187 37.398437-75.53125 75.355469-127.105468 119.308594-17.625 15.015625-37.597657 32.039062-58.328126 50.167969-5.472656 4.789062-12.503906 7.429687-19.789062 7.429687zm-112.96875-425.523437c-31.066406 0-59.605469 12.398437-80.367188 34.914062-21.070312 22.855469-32.675781 54.449219-32.675781 88.964844 0 36.417968 13.535157 68.988281 43.882813 105.605468 29.332031 35.394532 72.960937 72.574219 123.476562 115.625l.09375.078126c17.660156 15.050781 37.679688 32.113281 58.515625 50.332031 20.960938-18.253907 41.011719-35.34375 58.707031-50.417969 50.511719-43.050781 94.136719-80.222656 123.46875-115.617188 30.34375-36.617187 43.878907-69.1875 43.878907-105.605468 0-34.515625-11.605469-66.109375-32.675781-88.964844-20.757813-22.515625-49.300782-34.914062-80.363282-34.914062-22.757812 0-43.652344 7.234374-62.101562 21.5-16.441406 12.71875-27.894532 28.796874-34.609375 40.046874-3.453125 5.785157-9.53125 9.238282-16.261719 9.238282s-12.808594-3.453125-16.261719-9.238282c-6.710937-11.25-18.164062-27.328124-34.609375-40.046874-18.449218-14.265626-39.34375-21.5-62.097656-21.5zm0 0"></path></svg>
+                            <div class="card-body">
+                              <h5 class="card-title">Атлас однотонный</h5>
+                              <p class="card-text"><span>962/2013</span></p>
+                              <p class="card-text">Состав: 97 % SE; 3% EA</p>
+                              <div class="card-text-box">
+                                <p class="card-text"><span>90 грн <hr></span></p>
+                                <p class="card-text">80 грн</p>
+                              </div>
+                              <a href="#" class="btn">Купить</a>
+                              <div class="opt">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="28" viewBox="0 0 27 28">
+                                    <g id="Векторный_смарт-объект" data-name="Векторный смарт-объект" transform="translate(-840 -1278)">
+                                      <g id="Векторный_смарт-объект-2" data-name="Векторный смарт-объект" transform="translate(839.235 1278)">
+                                        <path id="Контур_1" data-name="Контур 1" d="M27.765,5.959a.876.876,0,0,0-.553-.81L14.6.066a.909.909,0,0,0-.678,0L1.319,5.149a.876.876,0,0,0-.553.81V22.041a.876.876,0,0,0,.553.81l12.607,5.083a.906.906,0,0,0,.677,0l12.609-5.083a.876.876,0,0,0,.553-.81Zm-13.5,4.21L9.62,8.3,19.659,4l4.956,2ZM2.551,7.34,6.558,8.955v4.559a.893.893,0,0,0,1.785,0V9.675L13.373,11.7V25.817L2.551,21.454ZM14.265,1.823,17.36,3.071,7.321,7.368,3.916,6Zm.893,9.88L25.98,7.34V21.454L15.158,25.817Z"/>
+                                      </g>
+                                      <path id="Color_Overlay" data-name="Color Overlay" d="M853.16,1305.934l-12.607-5.083a.876.876,0,0,1-.554-.81v-16.082a.876.876,0,0,1,.554-.81l12.607-5.083a.912.912,0,0,1,.679,0l12.607,5.083a.876.876,0,0,1,.553.81v16.082a.876.876,0,0,1-.553.81l-12.608,5.083h0a.909.909,0,0,1-.678,0Zm1.232-16.231v14.115l10.823-4.363v-14.115Zm-12.607,9.751,10.822,4.363V1289.7l-5.028-2.028v3.839a.893.893,0,0,1-1.786,0v-4.559l-4.008-1.616Zm7.069-13.159,4.645,1.873L863.85,1284l-4.956-2Zm-5.7-2.3,3.4,1.372,10.039-4.3-3.094-1.247Z" fill="#b4b4b4"/>
+                                    </g>
+                                </svg>
+                                <p><span>Опт</span></p>                          
+                              </div>
+                            </div>
+                        </div>
+                        <div class="card col-4">
+                            <img class="card-img-top" src="img/card.png" alt="Card image cap">
+                            <svg class="like" viewBox="0 -28 512.001 512" xmlns="http://www.w3.org/2000/svg" id="fi_1077035"><path d="m256 455.515625c-7.289062 0-14.316406-2.640625-19.792969-7.4375-20.683593-18.085937-40.625-35.082031-58.21875-50.074219l-.089843-.078125c-51.582032-43.957031-96.125-81.917969-127.117188-119.3125-34.644531-41.804687-50.78125-81.441406-50.78125-124.742187 0-42.070313 14.425781-80.882813 40.617188-109.292969 26.503906-28.746094 62.871093-44.578125 102.414062-44.578125 29.554688 0 56.621094 9.34375 80.445312 27.769531 12.023438 9.300781 22.921876 20.683594 32.523438 33.960938 9.605469-13.277344 20.5-24.660157 32.527344-33.960938 23.824218-18.425781 50.890625-27.769531 80.445312-27.769531 39.539063 0 75.910156 15.832031 102.414063 44.578125 26.191406 28.410156 40.613281 67.222656 40.613281 109.292969 0 43.300781-16.132812 82.9375-50.777344 124.738281-30.992187 37.398437-75.53125 75.355469-127.105468 119.308594-17.625 15.015625-37.597657 32.039062-58.328126 50.167969-5.472656 4.789062-12.503906 7.429687-19.789062 7.429687zm-112.96875-425.523437c-31.066406 0-59.605469 12.398437-80.367188 34.914062-21.070312 22.855469-32.675781 54.449219-32.675781 88.964844 0 36.417968 13.535157 68.988281 43.882813 105.605468 29.332031 35.394532 72.960937 72.574219 123.476562 115.625l.09375.078126c17.660156 15.050781 37.679688 32.113281 58.515625 50.332031 20.960938-18.253907 41.011719-35.34375 58.707031-50.417969 50.511719-43.050781 94.136719-80.222656 123.46875-115.617188 30.34375-36.617187 43.878907-69.1875 43.878907-105.605468 0-34.515625-11.605469-66.109375-32.675781-88.964844-20.757813-22.515625-49.300782-34.914062-80.363282-34.914062-22.757812 0-43.652344 7.234374-62.101562 21.5-16.441406 12.71875-27.894532 28.796874-34.609375 40.046874-3.453125 5.785157-9.53125 9.238282-16.261719 9.238282s-12.808594-3.453125-16.261719-9.238282c-6.710937-11.25-18.164062-27.328124-34.609375-40.046874-18.449218-14.265626-39.34375-21.5-62.097656-21.5zm0 0"></path></svg>
+                            <div class="card-body">
+                              <h5 class="card-title">Атлас однотонный</h5>
+                              <p class="card-text"><span>962/2013</span></p>
+                              <p class="card-text">Состав: 97 % SE; 3% EA</p>
+                              <div class="card-text-box">
+                                <p class="card-text"><span>90 грн <hr></span></p>
+                                <p class="card-text">80 грн</p>
+                              </div>
+                              <a href="#" class="btn">Купить</a>
+                              <div class="opt">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="28" viewBox="0 0 27 28">
+                                    <g id="Векторный_смарт-объект" data-name="Векторный смарт-объект" transform="translate(-840 -1278)">
+                                      <g id="Векторный_смарт-объект-2" data-name="Векторный смарт-объект" transform="translate(839.235 1278)">
+                                        <path id="Контур_1" data-name="Контур 1" d="M27.765,5.959a.876.876,0,0,0-.553-.81L14.6.066a.909.909,0,0,0-.678,0L1.319,5.149a.876.876,0,0,0-.553.81V22.041a.876.876,0,0,0,.553.81l12.607,5.083a.906.906,0,0,0,.677,0l12.609-5.083a.876.876,0,0,0,.553-.81Zm-13.5,4.21L9.62,8.3,19.659,4l4.956,2ZM2.551,7.34,6.558,8.955v4.559a.893.893,0,0,0,1.785,0V9.675L13.373,11.7V25.817L2.551,21.454ZM14.265,1.823,17.36,3.071,7.321,7.368,3.916,6Zm.893,9.88L25.98,7.34V21.454L15.158,25.817Z"/>
+                                      </g>
+                                      <path id="Color_Overlay" data-name="Color Overlay" d="M853.16,1305.934l-12.607-5.083a.876.876,0,0,1-.554-.81v-16.082a.876.876,0,0,1,.554-.81l12.607-5.083a.912.912,0,0,1,.679,0l12.607,5.083a.876.876,0,0,1,.553.81v16.082a.876.876,0,0,1-.553.81l-12.608,5.083h0a.909.909,0,0,1-.678,0Zm1.232-16.231v14.115l10.823-4.363v-14.115Zm-12.607,9.751,10.822,4.363V1289.7l-5.028-2.028v3.839a.893.893,0,0,1-1.786,0v-4.559l-4.008-1.616Zm7.069-13.159,4.645,1.873L863.85,1284l-4.956-2Zm-5.7-2.3,3.4,1.372,10.039-4.3-3.094-1.247Z" fill="#b4b4b4"/>
+                                    </g>
+                                </svg>
+                                <p><span>Опт</span></p>                          
+                              </div>
+                            </div>
+                        </div>
+                        <div class="card col-4">
+                            <img class="card-img-top" src="img/card.png" alt="Card image cap">
+                            <svg class="like" viewBox="0 -28 512.001 512" xmlns="http://www.w3.org/2000/svg" id="fi_1077035"><path d="m256 455.515625c-7.289062 0-14.316406-2.640625-19.792969-7.4375-20.683593-18.085937-40.625-35.082031-58.21875-50.074219l-.089843-.078125c-51.582032-43.957031-96.125-81.917969-127.117188-119.3125-34.644531-41.804687-50.78125-81.441406-50.78125-124.742187 0-42.070313 14.425781-80.882813 40.617188-109.292969 26.503906-28.746094 62.871093-44.578125 102.414062-44.578125 29.554688 0 56.621094 9.34375 80.445312 27.769531 12.023438 9.300781 22.921876 20.683594 32.523438 33.960938 9.605469-13.277344 20.5-24.660157 32.527344-33.960938 23.824218-18.425781 50.890625-27.769531 80.445312-27.769531 39.539063 0 75.910156 15.832031 102.414063 44.578125 26.191406 28.410156 40.613281 67.222656 40.613281 109.292969 0 43.300781-16.132812 82.9375-50.777344 124.738281-30.992187 37.398437-75.53125 75.355469-127.105468 119.308594-17.625 15.015625-37.597657 32.039062-58.328126 50.167969-5.472656 4.789062-12.503906 7.429687-19.789062 7.429687zm-112.96875-425.523437c-31.066406 0-59.605469 12.398437-80.367188 34.914062-21.070312 22.855469-32.675781 54.449219-32.675781 88.964844 0 36.417968 13.535157 68.988281 43.882813 105.605468 29.332031 35.394532 72.960937 72.574219 123.476562 115.625l.09375.078126c17.660156 15.050781 37.679688 32.113281 58.515625 50.332031 20.960938-18.253907 41.011719-35.34375 58.707031-50.417969 50.511719-43.050781 94.136719-80.222656 123.46875-115.617188 30.34375-36.617187 43.878907-69.1875 43.878907-105.605468 0-34.515625-11.605469-66.109375-32.675781-88.964844-20.757813-22.515625-49.300782-34.914062-80.363282-34.914062-22.757812 0-43.652344 7.234374-62.101562 21.5-16.441406 12.71875-27.894532 28.796874-34.609375 40.046874-3.453125 5.785157-9.53125 9.238282-16.261719 9.238282s-12.808594-3.453125-16.261719-9.238282c-6.710937-11.25-18.164062-27.328124-34.609375-40.046874-18.449218-14.265626-39.34375-21.5-62.097656-21.5zm0 0"></path></svg>
+                            <div class="card-body">
+                              <h5 class="card-title">Атлас однотонный</h5>
+                              <p class="card-text"><span>962/2013</span></p>
+                              <p class="card-text">Состав: 97 % SE; 3% EA</p>
+                              <div class="card-text-box">
+                                <p class="card-text"><span>90 грн <hr></span></p>
+                                <p class="card-text">80 грн</p>
+                              </div>
+                              <a href="#" class="btn">Купить</a>
+                              <div class="opt">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="28" viewBox="0 0 27 28">
+                                    <g id="Векторный_смарт-объект" data-name="Векторный смарт-объект" transform="translate(-840 -1278)">
+                                      <g id="Векторный_смарт-объект-2" data-name="Векторный смарт-объект" transform="translate(839.235 1278)">
+                                        <path id="Контур_1" data-name="Контур 1" d="M27.765,5.959a.876.876,0,0,0-.553-.81L14.6.066a.909.909,0,0,0-.678,0L1.319,5.149a.876.876,0,0,0-.553.81V22.041a.876.876,0,0,0,.553.81l12.607,5.083a.906.906,0,0,0,.677,0l12.609-5.083a.876.876,0,0,0,.553-.81Zm-13.5,4.21L9.62,8.3,19.659,4l4.956,2ZM2.551,7.34,6.558,8.955v4.559a.893.893,0,0,0,1.785,0V9.675L13.373,11.7V25.817L2.551,21.454ZM14.265,1.823,17.36,3.071,7.321,7.368,3.916,6Zm.893,9.88L25.98,7.34V21.454L15.158,25.817Z"/>
+                                      </g>
+                                      <path id="Color_Overlay" data-name="Color Overlay" d="M853.16,1305.934l-12.607-5.083a.876.876,0,0,1-.554-.81v-16.082a.876.876,0,0,1,.554-.81l12.607-5.083a.912.912,0,0,1,.679,0l12.607,5.083a.876.876,0,0,1,.553.81v16.082a.876.876,0,0,1-.553.81l-12.608,5.083h0a.909.909,0,0,1-.678,0Zm1.232-16.231v14.115l10.823-4.363v-14.115Zm-12.607,9.751,10.822,4.363V1289.7l-5.028-2.028v3.839a.893.893,0,0,1-1.786,0v-4.559l-4.008-1.616Zm7.069-13.159,4.645,1.873L863.85,1284l-4.956-2Zm-5.7-2.3,3.4,1.372,10.039-4.3-3.094-1.247Z" fill="#b4b4b4"/>
+                                    </g>
+                                </svg>
+                                <p><span>Опт</span></p>                          
+                              </div>
+                            </div>
+                        </div>
+                        <div class="card col-4">
+                            <img class="card-img-top" src="img/card.png" alt="Card image cap">
+                            <svg class="like" viewBox="0 -28 512.001 512" xmlns="http://www.w3.org/2000/svg" id="fi_1077035"><path d="m256 455.515625c-7.289062 0-14.316406-2.640625-19.792969-7.4375-20.683593-18.085937-40.625-35.082031-58.21875-50.074219l-.089843-.078125c-51.582032-43.957031-96.125-81.917969-127.117188-119.3125-34.644531-41.804687-50.78125-81.441406-50.78125-124.742187 0-42.070313 14.425781-80.882813 40.617188-109.292969 26.503906-28.746094 62.871093-44.578125 102.414062-44.578125 29.554688 0 56.621094 9.34375 80.445312 27.769531 12.023438 9.300781 22.921876 20.683594 32.523438 33.960938 9.605469-13.277344 20.5-24.660157 32.527344-33.960938 23.824218-18.425781 50.890625-27.769531 80.445312-27.769531 39.539063 0 75.910156 15.832031 102.414063 44.578125 26.191406 28.410156 40.613281 67.222656 40.613281 109.292969 0 43.300781-16.132812 82.9375-50.777344 124.738281-30.992187 37.398437-75.53125 75.355469-127.105468 119.308594-17.625 15.015625-37.597657 32.039062-58.328126 50.167969-5.472656 4.789062-12.503906 7.429687-19.789062 7.429687zm-112.96875-425.523437c-31.066406 0-59.605469 12.398437-80.367188 34.914062-21.070312 22.855469-32.675781 54.449219-32.675781 88.964844 0 36.417968 13.535157 68.988281 43.882813 105.605468 29.332031 35.394532 72.960937 72.574219 123.476562 115.625l.09375.078126c17.660156 15.050781 37.679688 32.113281 58.515625 50.332031 20.960938-18.253907 41.011719-35.34375 58.707031-50.417969 50.511719-43.050781 94.136719-80.222656 123.46875-115.617188 30.34375-36.617187 43.878907-69.1875 43.878907-105.605468 0-34.515625-11.605469-66.109375-32.675781-88.964844-20.757813-22.515625-49.300782-34.914062-80.363282-34.914062-22.757812 0-43.652344 7.234374-62.101562 21.5-16.441406 12.71875-27.894532 28.796874-34.609375 40.046874-3.453125 5.785157-9.53125 9.238282-16.261719 9.238282s-12.808594-3.453125-16.261719-9.238282c-6.710937-11.25-18.164062-27.328124-34.609375-40.046874-18.449218-14.265626-39.34375-21.5-62.097656-21.5zm0 0"></path></svg>
+                            <div class="card-body">
+                              <h5 class="card-title">Атлас однотонный</h5>
+                              <p class="card-text"><span>962/2013</span></p>
+                              <p class="card-text">Состав: 97 % SE; 3% EA</p>
+                              <div class="card-text-box">
+                                <p class="card-text"><span>90 грн <hr></span></p>
+                                <p class="card-text">80 грн</p>
+                              </div>
+                              <a href="#" class="btn">Купить</a>
+                              <div class="opt">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="28" viewBox="0 0 27 28">
+                                    <g id="Векторный_смарт-объект" data-name="Векторный смарт-объект" transform="translate(-840 -1278)">
+                                      <g id="Векторный_смарт-объект-2" data-name="Векторный смарт-объект" transform="translate(839.235 1278)">
+                                        <path id="Контур_1" data-name="Контур 1" d="M27.765,5.959a.876.876,0,0,0-.553-.81L14.6.066a.909.909,0,0,0-.678,0L1.319,5.149a.876.876,0,0,0-.553.81V22.041a.876.876,0,0,0,.553.81l12.607,5.083a.906.906,0,0,0,.677,0l12.609-5.083a.876.876,0,0,0,.553-.81Zm-13.5,4.21L9.62,8.3,19.659,4l4.956,2ZM2.551,7.34,6.558,8.955v4.559a.893.893,0,0,0,1.785,0V9.675L13.373,11.7V25.817L2.551,21.454ZM14.265,1.823,17.36,3.071,7.321,7.368,3.916,6Zm.893,9.88L25.98,7.34V21.454L15.158,25.817Z"/>
+                                      </g>
+                                      <path id="Color_Overlay" data-name="Color Overlay" d="M853.16,1305.934l-12.607-5.083a.876.876,0,0,1-.554-.81v-16.082a.876.876,0,0,1,.554-.81l12.607-5.083a.912.912,0,0,1,.679,0l12.607,5.083a.876.876,0,0,1,.553.81v16.082a.876.876,0,0,1-.553.81l-12.608,5.083h0a.909.909,0,0,1-.678,0Zm1.232-16.231v14.115l10.823-4.363v-14.115Zm-12.607,9.751,10.822,4.363V1289.7l-5.028-2.028v3.839a.893.893,0,0,1-1.786,0v-4.559l-4.008-1.616Zm7.069-13.159,4.645,1.873L863.85,1284l-4.956-2Zm-5.7-2.3,3.4,1.372,10.039-4.3-3.094-1.247Z" fill="#b4b4b4"/>
+                                    </g>
+                                </svg>
+                                <p><span>Опт</span></p>                          
+                              </div>
+                            </div>
+                        </div>
+                        <div class="card col-4">
+                            <img class="card-img-top" src="img/card.png" alt="Card image cap">
+                            <svg class="like" viewBox="0 -28 512.001 512" xmlns="http://www.w3.org/2000/svg" id="fi_1077035"><path d="m256 455.515625c-7.289062 0-14.316406-2.640625-19.792969-7.4375-20.683593-18.085937-40.625-35.082031-58.21875-50.074219l-.089843-.078125c-51.582032-43.957031-96.125-81.917969-127.117188-119.3125-34.644531-41.804687-50.78125-81.441406-50.78125-124.742187 0-42.070313 14.425781-80.882813 40.617188-109.292969 26.503906-28.746094 62.871093-44.578125 102.414062-44.578125 29.554688 0 56.621094 9.34375 80.445312 27.769531 12.023438 9.300781 22.921876 20.683594 32.523438 33.960938 9.605469-13.277344 20.5-24.660157 32.527344-33.960938 23.824218-18.425781 50.890625-27.769531 80.445312-27.769531 39.539063 0 75.910156 15.832031 102.414063 44.578125 26.191406 28.410156 40.613281 67.222656 40.613281 109.292969 0 43.300781-16.132812 82.9375-50.777344 124.738281-30.992187 37.398437-75.53125 75.355469-127.105468 119.308594-17.625 15.015625-37.597657 32.039062-58.328126 50.167969-5.472656 4.789062-12.503906 7.429687-19.789062 7.429687zm-112.96875-425.523437c-31.066406 0-59.605469 12.398437-80.367188 34.914062-21.070312 22.855469-32.675781 54.449219-32.675781 88.964844 0 36.417968 13.535157 68.988281 43.882813 105.605468 29.332031 35.394532 72.960937 72.574219 123.476562 115.625l.09375.078126c17.660156 15.050781 37.679688 32.113281 58.515625 50.332031 20.960938-18.253907 41.011719-35.34375 58.707031-50.417969 50.511719-43.050781 94.136719-80.222656 123.46875-115.617188 30.34375-36.617187 43.878907-69.1875 43.878907-105.605468 0-34.515625-11.605469-66.109375-32.675781-88.964844-20.757813-22.515625-49.300782-34.914062-80.363282-34.914062-22.757812 0-43.652344 7.234374-62.101562 21.5-16.441406 12.71875-27.894532 28.796874-34.609375 40.046874-3.453125 5.785157-9.53125 9.238282-16.261719 9.238282s-12.808594-3.453125-16.261719-9.238282c-6.710937-11.25-18.164062-27.328124-34.609375-40.046874-18.449218-14.265626-39.34375-21.5-62.097656-21.5zm0 0"></path></svg>
+                            <div class="card-body">
+                              <h5 class="card-title">Атлас однотонный</h5>
+                              <p class="card-text"><span>962/2013</span></p>
+                              <p class="card-text">Состав: 97 % SE; 3% EA</p>
+                              <div class="card-text-box">
+                                <p class="card-text"><span>90 грн <hr></span></p>
+                                <p class="card-text">80 грн</p>
+                              </div>
+                              <a href="#" class="btn">Купить</a>
+                              <div class="opt">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="28" viewBox="0 0 27 28">
+                                    <g id="Векторный_смарт-объект" data-name="Векторный смарт-объект" transform="translate(-840 -1278)">
+                                      <g id="Векторный_смарт-объект-2" data-name="Векторный смарт-объект" transform="translate(839.235 1278)">
+                                        <path id="Контур_1" data-name="Контур 1" d="M27.765,5.959a.876.876,0,0,0-.553-.81L14.6.066a.909.909,0,0,0-.678,0L1.319,5.149a.876.876,0,0,0-.553.81V22.041a.876.876,0,0,0,.553.81l12.607,5.083a.906.906,0,0,0,.677,0l12.609-5.083a.876.876,0,0,0,.553-.81Zm-13.5,4.21L9.62,8.3,19.659,4l4.956,2ZM2.551,7.34,6.558,8.955v4.559a.893.893,0,0,0,1.785,0V9.675L13.373,11.7V25.817L2.551,21.454ZM14.265,1.823,17.36,3.071,7.321,7.368,3.916,6Zm.893,9.88L25.98,7.34V21.454L15.158,25.817Z"/>
+                                      </g>
+                                      <path id="Color_Overlay" data-name="Color Overlay" d="M853.16,1305.934l-12.607-5.083a.876.876,0,0,1-.554-.81v-16.082a.876.876,0,0,1,.554-.81l12.607-5.083a.912.912,0,0,1,.679,0l12.607,5.083a.876.876,0,0,1,.553.81v16.082a.876.876,0,0,1-.553.81l-12.608,5.083h0a.909.909,0,0,1-.678,0Zm1.232-16.231v14.115l10.823-4.363v-14.115Zm-12.607,9.751,10.822,4.363V1289.7l-5.028-2.028v3.839a.893.893,0,0,1-1.786,0v-4.559l-4.008-1.616Zm7.069-13.159,4.645,1.873L863.85,1284l-4.956-2Zm-5.7-2.3,3.4,1.372,10.039-4.3-3.094-1.247Z" fill="#b4b4b4"/>
+                                    </g>
+                                </svg>
+                                <p><span>Опт</span></p>                          
+                              </div>
+                            </div>
+                        </div>
+                        <div class="card col-4">
+                            <img class="card-img-top" src="img/card.png" alt="Card image cap">
+                            <svg class="like" viewBox="0 -28 512.001 512" xmlns="http://www.w3.org/2000/svg" id="fi_1077035"><path d="m256 455.515625c-7.289062 0-14.316406-2.640625-19.792969-7.4375-20.683593-18.085937-40.625-35.082031-58.21875-50.074219l-.089843-.078125c-51.582032-43.957031-96.125-81.917969-127.117188-119.3125-34.644531-41.804687-50.78125-81.441406-50.78125-124.742187 0-42.070313 14.425781-80.882813 40.617188-109.292969 26.503906-28.746094 62.871093-44.578125 102.414062-44.578125 29.554688 0 56.621094 9.34375 80.445312 27.769531 12.023438 9.300781 22.921876 20.683594 32.523438 33.960938 9.605469-13.277344 20.5-24.660157 32.527344-33.960938 23.824218-18.425781 50.890625-27.769531 80.445312-27.769531 39.539063 0 75.910156 15.832031 102.414063 44.578125 26.191406 28.410156 40.613281 67.222656 40.613281 109.292969 0 43.300781-16.132812 82.9375-50.777344 124.738281-30.992187 37.398437-75.53125 75.355469-127.105468 119.308594-17.625 15.015625-37.597657 32.039062-58.328126 50.167969-5.472656 4.789062-12.503906 7.429687-19.789062 7.429687zm-112.96875-425.523437c-31.066406 0-59.605469 12.398437-80.367188 34.914062-21.070312 22.855469-32.675781 54.449219-32.675781 88.964844 0 36.417968 13.535157 68.988281 43.882813 105.605468 29.332031 35.394532 72.960937 72.574219 123.476562 115.625l.09375.078126c17.660156 15.050781 37.679688 32.113281 58.515625 50.332031 20.960938-18.253907 41.011719-35.34375 58.707031-50.417969 50.511719-43.050781 94.136719-80.222656 123.46875-115.617188 30.34375-36.617187 43.878907-69.1875 43.878907-105.605468 0-34.515625-11.605469-66.109375-32.675781-88.964844-20.757813-22.515625-49.300782-34.914062-80.363282-34.914062-22.757812 0-43.652344 7.234374-62.101562 21.5-16.441406 12.71875-27.894532 28.796874-34.609375 40.046874-3.453125 5.785157-9.53125 9.238282-16.261719 9.238282s-12.808594-3.453125-16.261719-9.238282c-6.710937-11.25-18.164062-27.328124-34.609375-40.046874-18.449218-14.265626-39.34375-21.5-62.097656-21.5zm0 0"></path></svg>
+                            <div class="card-body">
+                              <h5 class="card-title">Атлас однотонный</h5>
+                              <p class="card-text"><span>962/2013</span></p>
+                              <p class="card-text">Состав: 97 % SE; 3% EA</p>
+                              <div class="card-text-box">
+                                <p class="card-text"><span>90 грн <hr></span></p>
+                                <p class="card-text">80 грн</p>
+                              </div>
+                              <a href="#" class="btn">Купить</a>
+                              <div class="opt">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="28" viewBox="0 0 27 28">
+                                    <g id="Векторный_смарт-объект" data-name="Векторный смарт-объект" transform="translate(-840 -1278)">
+                                      <g id="Векторный_смарт-объект-2" data-name="Векторный смарт-объект" transform="translate(839.235 1278)">
+                                        <path id="Контур_1" data-name="Контур 1" d="M27.765,5.959a.876.876,0,0,0-.553-.81L14.6.066a.909.909,0,0,0-.678,0L1.319,5.149a.876.876,0,0,0-.553.81V22.041a.876.876,0,0,0,.553.81l12.607,5.083a.906.906,0,0,0,.677,0l12.609-5.083a.876.876,0,0,0,.553-.81Zm-13.5,4.21L9.62,8.3,19.659,4l4.956,2ZM2.551,7.34,6.558,8.955v4.559a.893.893,0,0,0,1.785,0V9.675L13.373,11.7V25.817L2.551,21.454ZM14.265,1.823,17.36,3.071,7.321,7.368,3.916,6Zm.893,9.88L25.98,7.34V21.454L15.158,25.817Z"/>
+                                      </g>
+                                      <path id="Color_Overlay" data-name="Color Overlay" d="M853.16,1305.934l-12.607-5.083a.876.876,0,0,1-.554-.81v-16.082a.876.876,0,0,1,.554-.81l12.607-5.083a.912.912,0,0,1,.679,0l12.607,5.083a.876.876,0,0,1,.553.81v16.082a.876.876,0,0,1-.553.81l-12.608,5.083h0a.909.909,0,0,1-.678,0Zm1.232-16.231v14.115l10.823-4.363v-14.115Zm-12.607,9.751,10.822,4.363V1289.7l-5.028-2.028v3.839a.893.893,0,0,1-1.786,0v-4.559l-4.008-1.616Zm7.069-13.159,4.645,1.873L863.85,1284l-4.956-2Zm-5.7-2.3,3.4,1.372,10.039-4.3-3.094-1.247Z" fill="#b4b4b4"/>
+                                    </g>
+                                </svg>
+                                <p><span>Опт</span></p>                          
+                              </div>
+                            </div>
+                        </div>
+    
+                      </div>
+    
+                      <div class="col-7 shop-more">
+                          <div class="more-title">
+                            <a class="more-title-items" href="#">Больше товаров </a>
+                            <hr>
+                        </div>
+                        <ul>
+                            <li><a class="active" href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><a href="#">6</a></li>
+                            <li><a href="#">7</a></li>
+                            <li><a href="#">..........</a></li>
+                            <li><a href="#">8</a></li>
+                            <li><a href="#">9</a></li>
+                        </ul>
+                      </div>
+                      
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="contact">
+        <div class="container">
+            <div class="contact__block">
+                <h2>Подпишись что бы первым узнавать о новинках</h2>
+                <form>
+                    <div class="form-row">
+                      <div class="form-group col-md-5">
+                        <input type="email" class="form-control" id="inputEmail" placeholder="e-mail">
+                      </div>
+                      <div class="form-group col-md-4">
+                        <input type="text" class="form-control" id="inputName" placeholder="Имя">
+                      </div>
+                      <button type="submit" class="btn col-md-2">Отправить</button>
+                    </div>
+                </form>
+                <h3>Аренда торговых площадей</h3>
+                <div class="contact-text">
+                    <div>
+                        <h5>TEXTILE PLACE</h5>
+                        <p>Магазин тканей–2000м<sup>2</sup></p>
+                    </div>
+                    <div>
+                        <h5>Киев, ул. Боженко</h5>
+                        <p><a href="#">Info@ludmila.com.ua</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="img/Logo.png" alt="">
+                    <h5><span>TEXTILE PLACE</span></h5>
+                    <p><span>Магазин тканей–2000м<sup>2</sup></span></p>
+                </div>
+                <div class="col-2">
+                    <ul>
+                        <li>
+                            <a href="#">Контакты</a>
+                        </li>
+                        <li>
+                            <a href="#">Доставка и оплата</a>
+                        </li>
+                        <li>
+                            <a href="#">О компании</a>
+                        </li>
+                        <li>
+                            <a href="#">Аренда</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-2">
+                    <ul>
+                        <li>
+                            <a href="#">Ткани</a>
+                        </li>
+                        <li>
+                            <a href="#">Фурнитура</a>
+                        </li>
+                        <li>
+                            <a href="#">По применению</a>
+                        </li>
+                        <li>
+                            <a href="#">Акции</a>
+                        </li>
+                        <li>
+                            <a href="#">АТЕЛЬЕ</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-2">
+                    <h6>График работы:</h6>
+                    <p><span>Пн. - Пт. с 9.00 до 18.00</span></p>
+                    <p><span>Сб. - Вс. – ВЫХОДНОЙ</span></p>
+                </div>
+                <div class="col-2">
+                    <h6>Адрес: </h6>
+                    <p><span>г. Киев, ул. Боженко</span></p>
+                    <h6>Почта:</h6>
+                    <p><span>info@ludmila.com.ua</span></p>
+                </div>
+                <div class="col-2">
+                    <h6>Телефон:</h6>
+                    <p><span>+38 067 191 31 51</span></p>
+                    <h6>Мы в социальных сетях:</h6>
+                    <a href="#"><img class="footer__icon" src="img/facebook.png" alt=""></a>
+                    <a href="#"><img class="footer__icon" src="img/instagram.png" alt=""></a>
+                    <a href="#"><img class="footer__icon" src="img/telegram.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-txt">
+            <p>© Все права защищены. 2021</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="scripts/slider.js"></script>
+    <script src="scripts/range1.js"></script>
+    <script>new Sim();</script>  <!-- вызов слайдера, можно несколько new Sim("first"); new Sim("second"); -->
+</body>
+
+</html>
